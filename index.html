@@ -1128,14 +1128,13 @@
              alt="Libra Terra Creativa"
              style="height:250px;width:auto;margin-bottom:10px;">
         <p class="hero-text">
-          Un mese che intreccia brunch vegetali, cene curate, laboratori, bagni di suono e pratiche di respiro per <em>ascoltarti, nutrirti e ispirarti</em> tra arte e cibo consapevole.
+            La magia parte da qui 
         </p>
         <div class="hero-cta">
           <a href="#mensili" class="cta-button">Scopri gli Eventi di Marzo</a>
           <a href="#mappa" class="cta-button secondary">Come Raggiungerci</a>
         </div>
         <p class="hero-caption">
-          Pietrasanta
         </p>
       </div>
       <div class="scroll-indicator" onclick="scrollToSection('welcome')">
@@ -2061,7 +2060,7 @@ ascolto.
                         <ul>
                             <li><a href="#home">Home</a></li>
                             <li><a href="#welcome">Chi Siamo</a></li>
-                            <li><a href="#mensili">Eventi Febbraio</a></li>
+                            <li><a href="#mensili">Eventi Marzo</a></li>
                             <li><a href="#mappa">Contatti</a></li>
                         </ul>
                     </div>
@@ -2196,25 +2195,34 @@ ascolto.
   <!-- SCRIPT EMAILJS + LOGICA FORM -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script>
-        // Eventi Febbraio 2026 – per il form di prenotazione
-    const eventsData = [
-      { id: 'feb_germogli', date: 1, title: 'Germogli di Meraviglia · Arteterapia per Bambini', meta: '1 febbraio · 9:45-11:00 (24-36 mesi) · 11:15-12:30 (3-5 anni) · con Irene Tovani', value: 'Germogli di Meraviglia · 01/02 · laboratorio bimbi' },
-      { id: 'feb_sanbiagio', date: 3, title: 'Cena di San Biagio · Tradizione Contemporanea', meta: '3 febbraio · dalle 20:00 · cucina plant-based by Amasia', value: 'Cena di San Biagio · 03/02 · dalle 20:00' },
-      { id: 'feb_naturopatia', date: 7, title: 'Naturopatia · Microbiota & Gemmoderivati', meta: '7 febbraio · 16:00-17:30 · con Vanessa Parducci', value: 'Naturopatia · Microbiota & Gemmoderivati · 07/02 · 16:00-17:30' },
-      { id: 'feb_mindfulness', date: 12, title: 'Dal Respiro all’Ascolto di Sé · Mindfulness', meta: '12 febbraio · 19:00-20:30 · incontro 1 di 4 · con Daniele Boldrini', value: 'Mindfulness · Dal Respiro all’Ascolto di Sé · 12/02 · 19:00-20:30' },
-      { id: 'feb_soundbath', date: 13, title: 'Shamanic Sound Bath', meta: '13 febbraio · 18:00-20:00 · con Filippo Curto “Gentlehawk”', value: 'Shamanic Sound Bath · 13/02 · 18:00-20:00' },
-      { id: 'feb_ceramica_14', date: 14, title: 'Corso di Ceramica', meta: '14 febbraio · 15:00-17:30 · con Linda Bianchi Cervini', value: 'Corso di Ceramica · 14/02 · 15:00-17:30' },
-      { id: 'feb_flower_bouquet', date: 14, title: 'Flower Bouquet di San Valentino · Workshop Floreale', meta: '14 febbraio · 10:30-13:00 · con Fiorenzo Bellina', value: 'Flower Bouquet Workshop · 14/02 · 10:30-13:00' },
-      { id: 'feb_social_run', date: 15, title: 'Social Run · Il Ritmo del Benessere', meta: '15 febbraio · ritrovo 11:00 da Libra · con Simone', value: 'Social Run · 15/02 · ritrovo 11:00' },
-      { id: 'feb_buona_alimentazione5', date: 16, title: 'Incontri di Buona Alimentazione · 5° Incontro “Il buon pranzo”', meta: '16 febbraio · 18:00-20:00 · con Francesca Ciuffi', value: 'Buona Alimentazione · Il buon pranzo · 16/02 · 18:00-20:00' },
-      { id: 'feb_cerimonia_sciamanica', date: 27, title: 'Come in cielo, così in terra · Cerimonia Sciamanica', meta: '27 febbraio · 17:00-19:00 · con Filippo Curto “Gentlehawk”', value: 'Cerimonia Sciamanica · 27/02 · 17:00-19:00' },
+// Eventi Marzo 2026 – per il form di prenotazione
+const eventsData = [
+  { id: 'mar_brunch_arteterapia', date: 1, title: 'Brunch & Arteterapia per Bambini', meta: '1 marzo · Brunch 11:30-15:00 · Arteterapia bimbi 11:00-12:30 · brunch da Libra & arteterapia con Irene Tovani', value: 'Brunch & Arteterapia bambini · 01/03 · brunch + laboratorio' },
+  { id: 'mar_deep_connection', date: 2, title: 'Deep Connection Somatic & Touch · Incontro di presentazione', meta: '2 marzo · 18:00-19:30 · con Lisandro Maseret & Martina Roscioli', value: 'Deep Connection · presentazione · 02/03 · 18:00-19:30' },
+  { id: 'mar_corso_cucina', date: 6, title: 'Corso di Cucina Vegetale & Cena', meta: '6 marzo · 17:00-21:00 · cucina plant-based by Amasia', value: 'Corso di Cucina Vegetale & Cena · 06/03 · 17:00-21:00' },
+  { id: 'mar_dialogo_cielo', date: 7, title: 'Dialogo con il Cielo · Modulo 3', meta: '7-8 marzo · percorso esperienziale su due giorni', value: 'Dialogo con il Cielo · Modulo 3 · 07-08/03' },
+  { id: 'mar_soundbath_13', date: 13, title: 'Sound Bath · Vibrazioni di Primavera', meta: '13 marzo · 18:00-20:00 · bagno di suono a Libra', value: 'Sound Bath · 13/03 · 18:00-20:00' },
+  { id: 'mar_brunch_15', date: 15, title: 'Brunch di Marzo', meta: '15 marzo · 11:30-15:00 · cucina vegetale da Libra', value: 'Brunch di Marzo · 15/03 · 11:30-15:00' },
+  { id: 'mar_buona_alimentazione6', date: 16, title: 'Incontri di Buona Alimentazione · 6° Incontro', meta: '16 marzo · 18:00-20:00 · con Francesca Ciuffi', value: 'Buona Alimentazione · 6° incontro · 16/03 · 18:00-20:00' },
+  { id: 'mar_fiori_bach', date: 21, title: 'Fiori di Bach · Emozioni & Benessere', meta: '21 marzo · 11:00-13:00 · con Francesca Ciuffi', value: 'Fiori di Bach · 21/03 · 11:00-13:00' },
+  { id: 'mar_ceramica_21', date: 21, title: 'Corso di Ceramica · Equinozio di Primavera', meta: '21 marzo · 15:00-17:00 · con Linda Bianchi Cervini', value: 'Corso di Ceramica · 21/03 · 15:00-17:00' },
+  { id: 'mar_cena_primavera', date: 21, title: 'Cena di Primavera', meta: '21 marzo · dalle 20:30 · cucina plant-based by Amasia', value: 'Cena di Primavera · 21/03 · dalle 20:30' },
+  { id: 'mar_wimhof', date: 22, title: 'Metodo Wim Hof · Respiro, Freddo & Mindset', meta: '22 marzo · 9:00-15:00 · con Andrea Senise', value: 'Metodo Wim Hof · 22/03 · 9:00-15:00' },
+  { id: 'mar_social_run', date: 22, title: 'Social Run · Il Ritmo del Benessere', meta: '22 marzo · ritrovo 11:00 da Libra · con Simone', value: 'Social Run · 22/03 · ritrovo 11:00' },
+  { id: 'mar_brunch_22', date: 22, title: 'Brunch di Marzo', meta: '22 marzo · 11:30-15:00 · cucina vegetale da Libra', value: 'Brunch di Marzo · 22/03 · 11:30-15:00' },
+  { id: 'mar_ceramica_22', date: 22, title: 'Corso di Ceramica', meta: '22 marzo · 15:00-17:00 · con Linda Bianchi Cervini', value: 'Corso di Ceramica · 22/03 · 15:00-17:00' },
+  { id: 'mar_soundbath_27', date: 27, title: 'Sound Bath di Fine Mese', meta: '27 marzo · 18:00-20:00 · bagno di suono a Libra', value: 'Sound Bath · 27/03 · 18:00-20:00' },
+  { id: 'mar_naturopatia_osteopatia_pilates', date: 28, title: 'Naturopatia, Osteopatia & Pilates', meta: '28 marzo · Naturopatia & Osteopatia 10:00-12:00 · Pilates Matwork 11:00-12:30 · con Vanessa Parducci, Andrea Senise & Maria Fontana', value: 'Naturopatia, Osteopatia & Pilates · 28/03 · mattina' },
+  { id: 'mar_brunch_29', date: 29, title: 'Brunch di Marzo', meta: '29 marzo · 11:30-15:00 · cucina vegetale da Libra', value: 'Brunch di Marzo · 29/03 · 11:30-15:00' },
+  { id: 'mar_disegno_schiele', date: 29, title: 'Disegno dal Vero · Omaggio a Schiele', meta: '29 marzo · 18:00-20:30 · con Maria Fontana & duo acustico jazz', value: 'Disegno dal Vero · Schiele · 29/03 · 18:00-20:30' },
 
-      // Settimanali / continuativi
-      { id: 'feb_allenamento_funzione', date: 0, title: 'Allenamento Funzionale Personalizzato', meta: 'Dal lunedì al sabato · su appuntamento · con Simone', value: 'Allenamento Funzionale Personalizzato · su appuntamento' },
-      { id: 'feb_hatha_yoga', date: 0, title: 'Hatha Yoga · Movimento, Cura e Nuova Vita', meta: 'Ogni martedì · 17:00-18:00 Mamma & Bebè · 18:15-19:15 Pratica aperta · con Silvia', value: 'Hatha Yoga con Silvia · ogni martedì' },
-      { id: 'feb_brunch', date: 0, title: 'Brunch della Domenica', meta: 'Tutte le domeniche di febbraio · 11:30-15:00 · cucina vegetale da Libra', value: 'Brunch della Domenica · tutte le domeniche · 11:30-15:00' },
-      { id: 'feb_ceramica_su_richiesta', date: 0, title: 'Corso di Ceramica su richiesta', meta: 'Attivabile in altre date · minimo 2 persone (o 4 per gruppo privato)', value: 'Corso di Ceramica su richiesta · su prenotazione' },
-    ];
+  // Settimanali / continuativi marzo
+  { id: 'mar_allenamento_funzionale', date: 0, title: 'Allenamento Funzionale Personalizzato', meta: 'Dal lunedì al sabato · su appuntamento · con Simone', value: 'Allenamento Funzionale Personalizzato · su appuntamento' },
+  { id: 'mar_hatha_yoga', date: 0, title: 'Hatha Yoga · Movimento, Cura e Nuova Vita', meta: 'Ogni martedì · 17:00-18:00 Mamma & Bebè · 18:15-19:15 Pratica aperta · con Silvia', value: 'Hatha Yoga con Silvia · ogni martedì' },
+  { id: 'mar_brunch_settimanale', date: 0, title: 'Brunch della Domenica', meta: 'Tutte le domeniche di marzo · 11:30-15:00 · cucina vegetale da Libra', value: 'Brunch della Domenica · tutte le domeniche di marzo · 11:30-15:00' },
+  { id: 'mar_ceramica_su_richiesta', date: 0, title: 'Corso di Ceramica su richiesta', meta: 'Attivabile in altre date · minimo 2 persone (o 4 per gruppo privato)', value: 'Corso di Ceramica su richiesta · su prenotazione' },
+];
+
 
     function scrollToSection(sectionId) {
       const section = document.getElementById(sectionId);
